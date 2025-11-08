@@ -37,16 +37,6 @@ describe("find best students", ()=> {
     })
 })
 
-/*describe("find best students literal", ()=> {
-    it.each`
-    a                       |result
-    ${studentsData[0]}      |${["Ivan", "Stepan"]}
-    ${studentsData[1]}      |${["Natalia", "Marina", "Dmitry"]}
-    ${studentsData[2]}      |${["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"]}
-    `(`peredam znach $a, rezultat $result`,
-    ({a, result})=>{
-        expect(maxColBal(a)).toEqual(result)
-    })
-}) */
+
     
  
