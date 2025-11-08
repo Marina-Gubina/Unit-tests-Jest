@@ -1,4 +1,4 @@
-const maxColBal = require ("../Jest_tests/students")
+const maxColBal = require ("../param_literal_tests/students_par_lit")
 
 const studentsData = [
   [
@@ -27,38 +27,17 @@ const studentsData = [
   ]
 ]
 
-describe("find best students", () => {
-    it("studentsData1", ()=> {
-        expect(maxColBal(studentsData[0])).toEqual(['Ivan', 'Stepan'])
-    })
-    it("studentsData2", ()=> {
-        expect(maxColBal(studentsData[1])).toEqual(["Natalia", "Marina", "Dmitry"])
-    })
-    it("studentsData3", ()=> {
-        expect(maxColBal(studentsData[2])).toEqual(["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"])
-    })
-})
 
-/*describe("find best students", ()=> {
-    it.each([
-        [studentsData[0], ['Ivan', 'Stepan']],
-        [studentsData[1], ["Natalia", "Marina", "Dmitry"]],
-        [studentsData[2], ["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"]]
-    ])("peremenn znach %o polychenn znach %s", (studentsData, result)=>{
-        expect(maxColBal(studentsData)).toEqual(result)
-    })
-})*/
-
-/*describe("find best students literal", ()=> {
+describe("find best students literal", ()=> {
     it.each`
     a                       |result
     ${studentsData[0]}      |${["Ivan", "Stepan"]}
     ${studentsData[1]}      |${["Natalia", "Marina", "Dmitry"]}
     ${studentsData[2]}      |${["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"]}
-    `(`peredam znach $a, rezultat $result`,
+    `(`find best students literal, $result`,
     ({a, result})=>{
         expect(maxColBal(a)).toEqual(result)
     })
-}) */
+})
     
  

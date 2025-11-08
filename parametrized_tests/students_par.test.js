@@ -27,45 +27,17 @@ const studentsData = [
   ]
 ]
 
-const arr6 = [
-    { "name": "Ivan", "score": 35, "date": "2022-10-11" },
-    { "name": "Maria", "score": 5, "date": "2022-10-10" },
-    { "name": "Olga", "score": 0, "date": "" },
-    { "name": "Stepan", "score": 35, "date": "2022-10-12" },
-    { "name": "Oleg", "score": 9, "date": "2022-10-01" },
-    { "name": "Zanna", "score": 15, "date": "2022-10-11" }
-  ]
-
-
-/*it ("max col ball", ()=> {
-    expect(maxColBal(arr6)).toEqual(["Ivan", "Stepan"])
-})*/
-
-//studentsData.forEach((el) => {
-    //maxColBal(el[0])
-    //console.log(el[index])
-    /*it("nazvanie", ()=> {
-        expect(maxColBal(studentsData[0])).toEqual(['Ivan', 'Stepan'])
-    })
-    it("nazvanie", ()=> {
-        expect(maxColBal(studentsData[1])).toEqual(["Natalia", "Marina", "Dmitry"])
-    })
-    it("nazvanie", ()=> {
-        expect(maxColBal(studentsData[2])).toEqual(["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"])
-    })
-//})*/
-
-describe("nazvanie", ()=> {
+describe("find best students", ()=> {
     it.each([
         [studentsData[0], ['Ivan', 'Stepan']],
         [studentsData[1], ["Natalia", "Marina", "Dmitry"]],
         [studentsData[2], ["Irina", "Vasily", "David", "Kristina", "Varvara", "Tanya"]]
-    ])("peremenn znach %o polychenn znach %s", (studentsData, result)=>{
+    ])("find best students %o, %s", (studentsData, result)=>{
         expect(maxColBal(studentsData)).toEqual(result)
     })
 })
 
-/*describe("nazvanie literal", ()=> {
+/*describe("find best students literal", ()=> {
     it.each`
     a                       |result
     ${studentsData[0]}      |${["Ivan", "Stepan"]}
